@@ -2,7 +2,7 @@ def factorial():
     user_input = input("Enter value for factorial:")
     intNum = int(user_input)
 
-    # check if less than zero
+    # check if less than 0
     if intNum < 0:
         return "Lower than 0 is invalid input"
     else:
