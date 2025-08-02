@@ -1,0 +1,19 @@
+def factorial():
+    user_input = input("Enter value for factorial:")
+    intNum = int(user_input)
+
+    if intNum < 0:
+        return "Lower than 0 is invalid input"
+    else:
+        if intNum == 0:
+            return 1
+        elif intNum == 1:
+            return 1
+        else:
+            result = 1
+            for ctr in range(1, intNum + 1):
+                result = result * ctr
+
+if __name__ == "__main__":
+    answer = factorial()
+    print("\n Factorial result: ", answer)
