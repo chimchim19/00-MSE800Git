@@ -14,6 +14,7 @@ def factorial():
             result = 1
             for ctr in range(1, intNum + 1):
                 result = result * ctr
+            return result
 
 if __name__ == "__main__":
     answer = factorial()
