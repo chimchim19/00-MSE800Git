@@ -30,6 +30,14 @@ def main():
     # lowest temperature
     print("The lowest recorded temperature of the week is", np.min(arrTempC), "Celsius")
 
+    # convert to Fahrenheit
+    arrTempF = arrTempC * 9 / 5 + 32
+    print("The temperatures of the week in Fahrenheit:", arrTempF)
+
+    # exceeded 20 degrees Celsius
+    indices_above20 = np.where(arrTempC > 20)
+    print("Indices of temperatures that exceeded 20 degrees Celsius:", indices_above20)
+
 if __name__ == "__main__":
     
     main()
