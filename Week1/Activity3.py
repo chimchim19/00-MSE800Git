@@ -20,23 +20,24 @@ def main():
     arrTempC = np.array([c1, c2, c3, c4, c5, c6, c7])
     print(arrTempC)
     
-    # average temperature
+    # average temperature / alternative function is np.mean()
+    # np.average() can be used to compute weighted average, but in this case weight is not defined
+    #     and it functions like np.mean()
     averageTemp = np.average(arrTempC)
     print("The average temperature in Celsius for the week is", np.round(averageTemp, decimals=2))
 
     # highest temperature
-    # tempHighest = np.max(arrTempC)
-    print("The highest recorded temperature of the week is", np.max(arrTempC), "Celsius.")
+    print("The highest recorded temperature for the week is", np.max(arrTempC), "Celsius.")
     # lowest temperature
-    print("The lowest recorded temperature of the week is", np.min(arrTempC), "Celsius")
+    print("The lowest recorded temperature for the week is", np.min(arrTempC), "Celsius")
 
     # convert to Fahrenheit
     arrTempF = arrTempC * 9 / 5 + 32
-    print("The temperatures of the week in Fahrenheit:", arrTempF)
+    print("The temperatures for the week in Fahrenheit:", arrTempF)
 
     # exceeded 20 degrees Celsius
     indices_above20 = np.where(arrTempC > 20)
-    print("Indices of temperatures that exceeded 20 degrees Celsius:", indices_above20)
+    print("Indices of temperatures that exceeded 20 degrees Celsius:", indices_above20[0])
 
 if __name__ == "__main__":
     
