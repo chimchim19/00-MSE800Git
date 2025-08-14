@@ -39,6 +39,7 @@ if __name__ == "__main__":
     print("Please enter information of second employee.")
     employee2 = Employee()  # instantiate second employee
 
+    # display stored employee information
     print("\nThe following details have been stored.")
     employee1.display_info()
     employee2.display_info()
@@ -46,6 +47,7 @@ if __name__ == "__main__":
     employee1.give_raise()
     employee2.give_raise()
 
+    # display updated employee information after raise
     print("\nThe employees' details have been updated!")
     employee1.display_info()
     employee2.display_info()
