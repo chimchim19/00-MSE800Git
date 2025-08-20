@@ -1,7 +1,12 @@
 """
+Week 3 - Activity 3: using parquet  format for big data
+MSE800
+270765080 Kristine Gonzalvo 
 Develop a Python project using an object-oriented (OO) approach to convert large datasets 
 into Parquet format. Then, compute the maximum, minimum, average, and absolute values 
-for each column in the dataset.
+for each column in the dataset. (see link to download a big numerical data in csv format 
+from link: https://archive.ics.uci.edu/datasets)
+Sample: https://archive.ics.uci.edu/dataset/332/online+news+popularity
 """
 
 import pandas as pd
