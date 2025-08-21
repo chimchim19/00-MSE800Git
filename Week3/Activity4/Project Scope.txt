@@ -1,4 +1,4 @@
 1.	Project scope (short paragraph)
 Write a  story that defines the purpose and scope of the database. Describe the main entities (e.g., students, lecturers, etc).
 
--- Design a database for storing the information for the students enrolled in the Masters programs being offered in Yoobee Colleges for the year 2025. The database will include student details, the courses being offered for each program, the course outlines, and who are the lecturers assigned.
+-- Design a database for storing the information for postgraduate programs being offered at Yoobee Colleges. The database will include program details, the courses under each program, as well as student information. The database should be able to provide the information of the classes to be taken for a specific program.
