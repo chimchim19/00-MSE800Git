@@ -1,0 +1,24 @@
+Project scope (short paragraph):
+
+Design a database for storing the information for postgraduate programs being offered at Yoobee Colleges.
+The database will include program details, the courses under each program, as well as student information.
+The database should be able to provide the information of the classes to be taken for a specific program.
+
+Use Case Design:
+
+Actors
+1. Course manager
+2. Lecturer
+3. Student
+
+Use cases:
+-- The Course manager can maintain details of the programs, courses, and classes
+-- The Course manager can assign the Lecturer for each class
+-- Lecturer can enter and view their personal information
+-- Lecturer can manage the classes assigned to him/her
+-- Lecturer can view details of the classes assigned to them
+-- Student enter can enter and view their personal information
+-- A student can view details of the classes under his/her programme enrolled to
+
+
+
