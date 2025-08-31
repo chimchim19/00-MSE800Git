@@ -1,3 +1,3 @@
 1. The use of encapsulation in the sample code can be identified through the private attributes of the class that can only be accessed through their defined public getter and setter methods.
 
-2. The purpose of encapsulation is to protect and ensure data integrity of the object. In the case of the sample code, both of the attributes 'name' and 'species' require to be non-empty strings. Therefore, direct access to these attributes has been restricted and can be controlled by their defined public methods where the necessary validations are in place.
+2. The purpose of encapsulation is to protect and ensure data integrity of the object. In the case of the sample code, both of the attributes 'name' and 'species' require to be non-empty strings. And so, direct access to these attributes has been restricted and can be controlled instead by their defined public methods (such as set_name() and set_species()) where the necessary validations are in place.
