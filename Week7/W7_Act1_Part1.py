@@ -52,13 +52,32 @@ def create_tables():
     )
     ''')
     
-    cursor.execute("INSERT OR IGNORE INTO users (id, name, email) VALUES (1, 'Alice', 'alice123@email.com')")
-    cursor.execute("INSERT OR IGNORE INTO users (id, name, email) VALUES (2, 'Bob', 'bob123@email.com')")
-    cursor.execute("INSERT OR IGNORE INTO orders (id, user_id, product, amount) VALUES (1, 1, 'Laptop', 999.99)")
-    cursor.execute("INSERT OR IGNORE INTO orders (id, user_id, product, amount) VALUES (2, 1, 'Mouse', 25.50)")
-    #cursor.execute("INSERT OR IGNORE INTO orders (id, user_id, product, amount VALUES (3, 2, 'Keyboard', 45.00)")
+    # Check if users already exist
+    cursor.execute("SELECT COUNT(*) FROM users")
+    if cursor.fetchone()[0] == 0:
+        init_users = [
+            (1, 'Alice', 'alice123@email.com'),
+            (2, 'Bob', 'bob123@email.com'),
+            (3, 'Charlie', 'charliemail@email.com'),
+            (4, 'David', 'davidtest@email.com')
+        ]
+        cursor.executemany("INSERT INTO users (id, name, email) VALUES (?, ?, ?)", init_users)
+    
+    # Check if orders already exist
+    cursor.execute("SELECT COUNT(*) FROM orders")
+    if cursor.fetchone()[0] == 0:
+        init_orders = [
+            (1, 1, 'Laptop', 999.99),
+            (2, 1, 'Mouse', 25.50),
+            (3, 2, 'Keyboard', 45.00),
+            (4, 3, 'Monitor', 150.75),
+            (5, 4, 'Printer', 85.20)
+        ]
+        cursor.executemany("INSERT INTO orders (id, user_id, product, amount) VALUES (?, ?, ?, ?)", init_orders)
 
-    print("Tables created and sample data inserted.")
+    conn.commit()
+    conn.close()
+
 
 if __name__ == "__main__":
 
