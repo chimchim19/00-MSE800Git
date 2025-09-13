@@ -136,7 +136,7 @@ def run():
     order_service = OrderService()
 
     # instantiate for singleton
-    db = DatabaseConnection()
+    db = DatabaseConnection()   # singleton global instance
     user_service2 = UserService2(db)
     order_service2 = OrderService2(db)
 
