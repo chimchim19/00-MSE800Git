@@ -158,7 +158,6 @@ def display_tracker_summary(tracker: ExpenseTracker):
     print("-"*50 + "\n")
 
 
-# Example usage
 if __name__ == "__main__":
     # Run unit tests
     print("\nRunning Unit Tests...\n")
