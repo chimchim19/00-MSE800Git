@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample Hyperlink</title>
+    </head>
+    <body>
+        <h1>This is the Hyperlink page</h1>
+        <p><a href="{{ url_for('index') }}">Go back to Main Page</a></p>
+    </body>
+    <h1>Enter Image URL</h1>
+    <form method="POST">
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url" placeholder="Enter image URL" required>
+        <button type="submit">Submit</button>
+    </form>
+</html>
