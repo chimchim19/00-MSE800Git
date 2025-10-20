@@ -1,3 +1,9 @@
+"""
+Week 12 - activity 5: develop Web-App Temperature Convector with Django
+
+Develop Web-App for Activity 2 in Week 12 (Temperature Convector) using Django
+"""
+
 from django.shortcuts import render
 from django.http import HttpRequest
 
