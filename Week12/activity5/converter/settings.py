@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tempconverter',
+    'tempconverter', # lets django know of my app
 ]
 
 MIDDLEWARE = [
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# to fix CSRF token error
 CSRF_TRUSTED_ORIGINS = ['https://your-domain.com', 'http://127.0.0.1:8000']
 
 ROOT_URLCONF = 'converter.urls'
